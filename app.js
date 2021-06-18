@@ -23,6 +23,10 @@ function add() {
     car1_imgTag = new Image();
     car1_imgTag.onload = uploadcar1;
     car1_imgTag.src = car1_img;
+
+    car2_imgTag = new Image();
+    car2_imgTag.onload = uploadcar2;
+    car2_imgTag.src = car2_img;
 }
 
 function uploadBackground() {
@@ -31,6 +35,10 @@ function uploadBackground() {
 
 function uploadcar1() {
     ctx.drawImage(car1_imgTag, car1_x, car1_y, car1_width, car1_height);
+}
+
+function uploadcar2() {
+    ctx.drawImage(car2_imgTag, car2_x, car2_y, car2_width, car2_height);
 }
 
 window.addEventListener("keydown", mykeydown);
